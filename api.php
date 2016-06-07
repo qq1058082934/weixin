@@ -67,7 +67,7 @@ class wechatCallbackapiTest
                 echo $resultStr;
             }
         }else{
-            echo "";
+            echo "欢迎关注ping";
             exit;
         }
     }
