@@ -53,12 +53,11 @@ class wechatCallbackapiTest
             $keyword = trim($postObj->Content);
             $time = time();
             $textTpl = "<xml>
-                        <ToUserName><![CDATA[%s]]></ToUserName>
-                        <FromUserName><![CDATA[%s]]></FromUserName>
-                        <CreateTime>%s</CreateTime>
-                        <MsgType><![CDATA[%s]]></MsgType>
-                        <Content><![CDATA[%s]]></Content>
-                        <FuncFlag>0</FuncFlag>
+                        <ToUserName><![CDATA[toUser]]></ToUserName>
+                        <FromUserName><![CDATA[fromUser]]></FromUserName>
+                        <CreateTime>12345678</CreateTime>
+                        <MsgType><![CDATA[text]]></MsgType>
+                        <Content><![CDATA[你好]]></Content>
                         </xml>";
             if($keyword == "?" || $keyword == "？")
             {
